@@ -1,0 +1,33 @@
+{
+  "name": "list",
+  "forceId": false,
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "task": {
+      "type": "string",
+      "required": true
+    },
+    "userid": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "users": {
+      "type": "belongsTo",
+      "model": "users",
+      "foreignKey": "userid"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
