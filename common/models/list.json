@@ -1,11 +1,11 @@
 {
   "name": "list",
-  "forceId": false,
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
+  "forceId": false,
   "properties": {
     "id": {
       "type": "number",
